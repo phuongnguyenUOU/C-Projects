@@ -1,0 +1,15 @@
+C:\Users\nqphu\OneDrive\Desktop\GIthub\C-Sharp-Projects\Todoapps\bin\Debug\net8.0\Todoapps.exe
+C:\Users\nqphu\OneDrive\Desktop\GIthub\C-Sharp-Projects\Todoapps\bin\Debug\net8.0\Todoapps.deps.json
+C:\Users\nqphu\OneDrive\Desktop\GIthub\C-Sharp-Projects\Todoapps\bin\Debug\net8.0\Todoapps.runtimeconfig.json
+C:\Users\nqphu\OneDrive\Desktop\GIthub\C-Sharp-Projects\Todoapps\bin\Debug\net8.0\Todoapps.dll
+C:\Users\nqphu\OneDrive\Desktop\GIthub\C-Sharp-Projects\Todoapps\bin\Debug\net8.0\Todoapps.pdb
+C:\Users\nqphu\OneDrive\Desktop\GIthub\C-Sharp-Projects\Todoapps\obj\Debug\net8.0\Todoapps.csproj.AssemblyReference.cache
+C:\Users\nqphu\OneDrive\Desktop\GIthub\C-Sharp-Projects\Todoapps\obj\Debug\net8.0\Todoapps.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nqphu\OneDrive\Desktop\GIthub\C-Sharp-Projects\Todoapps\obj\Debug\net8.0\Todoapps.AssemblyInfoInputs.cache
+C:\Users\nqphu\OneDrive\Desktop\GIthub\C-Sharp-Projects\Todoapps\obj\Debug\net8.0\Todoapps.AssemblyInfo.cs
+C:\Users\nqphu\OneDrive\Desktop\GIthub\C-Sharp-Projects\Todoapps\obj\Debug\net8.0\Todoapps.csproj.CoreCompileInputs.cache
+C:\Users\nqphu\OneDrive\Desktop\GIthub\C-Sharp-Projects\Todoapps\obj\Debug\net8.0\Todoapps.dll
+C:\Users\nqphu\OneDrive\Desktop\GIthub\C-Sharp-Projects\Todoapps\obj\Debug\net8.0\refint\Todoapps.dll
+C:\Users\nqphu\OneDrive\Desktop\GIthub\C-Sharp-Projects\Todoapps\obj\Debug\net8.0\Todoapps.pdb
+C:\Users\nqphu\OneDrive\Desktop\GIthub\C-Sharp-Projects\Todoapps\obj\Debug\net8.0\Todoapps.genruntimeconfig.cache
+C:\Users\nqphu\OneDrive\Desktop\GIthub\C-Sharp-Projects\Todoapps\obj\Debug\net8.0\ref\Todoapps.dll
