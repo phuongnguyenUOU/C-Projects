@@ -1,0 +1,11 @@
+D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\bin\Debug\Account-Manager.exe.config
+D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\bin\Debug\Account-Manager.exe
+D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\bin\Debug\Account-Manager.pdb
+D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account-Manager.csproj.AssemblyReference.cache
+D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account-Manager.csproj.SuggestedBindingRedirects.cache
+D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account_Manager.Login_Register_Form.resources
+D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account_Manager.Properties.Resources.resources
+D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account-Manager.csproj.GenerateResource.cache
+D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account-Manager.csproj.CoreCompileInputs.cache
+D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account-Manager.exe
+D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account-Manager.pdb
