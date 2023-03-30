@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Account_Manager
 {
@@ -20,19 +22,95 @@ namespace Account_Manager
         private void Login_Register_Form_Load(object sender, EventArgs e)
         {
             // display image on the panel (menu bar)
-            panel2.BackgroundImage = Image.FromFile("../../images/1.png");
+            /*panel2.BackgroundImage = Image.FromFile("../../images/1.png");*/
         }
 
         // login button
         private void button_Login_Click(object sender, EventArgs e)
         {
+            My_DB db = new My_DB();
 
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            DataTable table = new DataTable(); 
+
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `user` WHERE `username`=@un and `password`=@pass", db.getConnection);
+
+            command.Parameters.Add("@un",MySqlDbType.VarChar).Value = textBoxUsername.Text;
+            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = textBoxPassword.Text;
         }
 
         // register button
         private void button_Register_Click(object sender, EventArgs e)
         {
+            string fname = textBoxFName.Text;
+            string lname = textBoxFName.Text;
+            string username = textBoxUsernameRegister.Text;
+            string password = textBoxPasswordRegister.Text;
 
+            USER user = new USER();
+
+            if(veriffields("register"))
+            {
+                MemoryStream pic = new MemoryStream();
+                pictureBoxProfile.Image.Save(pic, pictureBoxProfile.Image.RawFormat);
+
+                // we need to check if the username already exists
+                // insert the new user in the database 
+                // we will create that in class USER
+                if(!user.usernameExists(username))
+                {
+                    if(user.insertUser(fname,lname,username,password,pic))
+                    {
+                        MessageBox.Show("Registration Completed Successfully", "Register",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Something Wrong", "Register", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("This Username Already Exists Try Another One", "Invalid", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Required Fields - Username / Password / Image", "Register", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        // create a function to check empty fields
+        public bool veriffields(string operation)
+        {
+            bool check = false;
+            
+            // if the operation is to register 
+            if(operation == "register")
+            {
+                // can  use fname, lname to the verification 
+                if(textBoxUsernameRegister.Text.Trim().Equals("") || textBoxPasswordRegister.Text.Trim().Equals("") || pictureBoxProfile.Image == null)
+                {
+                    check = false;
+                }
+                else
+                {
+                    check = true;
+                }
+            }
+            //  if the opereation is to login 
+            else if(operation == "login")
+            {
+                if(textBoxUsername.Text.Trim().Equals("") || textBoxPassword.Text.Trim().Equals(""))
+                {
+                    check = false;
+                }
+                else
+                {
+                    check = true;
+                }
+            }
+            return check;
         }
 
         // browse button
@@ -81,7 +159,7 @@ namespace Account_Manager
         {
             if (panel1.Location.X > -418)
             {
-                panel1.Location = new Point(panel1.Location.X - 20, panel1.Location.Y);
+                panel1.Location = new Point(panel1.Location.X - 418, panel1.Location.Y);
             }
             else
             {
@@ -96,7 +174,7 @@ namespace Account_Manager
         {
             if (panel1.Location.X < 0)
             {
-                panel1.Location = new Point(panel1.Location.X + 20, panel1.Location.Y);
+                panel1.Location = new Point(panel1.Location.X + 418, panel1.Location.Y);
             }
             else
             {

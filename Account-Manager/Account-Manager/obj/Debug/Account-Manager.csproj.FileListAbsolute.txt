@@ -9,3 +9,5 @@ D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account-Man
 D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account-Manager.csproj.CoreCompileInputs.cache
 D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account-Manager.exe
 D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account-Manager.pdb
+D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\bin\Debug\MySql.Data.dll
+D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account-Manager.csproj.CopyComplete

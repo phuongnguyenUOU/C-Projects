@@ -54,7 +54,6 @@
             this.button_Close = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
@@ -300,8 +299,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.panel2.Controls.Add(this.button_Minimize);
             this.panel2.Controls.Add(this.button_Close);
             this.panel2.Location = new System.Drawing.Point(-1, 0);
@@ -311,25 +309,31 @@
             // 
             // button_Minimize
             // 
-            this.button_Minimize.BackColor = System.Drawing.Color.Transparent;
+            this.button_Minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
             this.button_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button_Minimize.Location = new System.Drawing.Point(288, 0);
+            this.button_Minimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Minimize.ForeColor = System.Drawing.Color.White;
+            this.button_Minimize.Location = new System.Drawing.Point(337, 2);
             this.button_Minimize.Name = "button_Minimize";
             this.button_Minimize.Size = new System.Drawing.Size(36, 30);
             this.button_Minimize.TabIndex = 4;
+            this.button_Minimize.Text = "-";
             this.button_Minimize.UseVisualStyleBackColor = false;
             this.button_Minimize.Click += new System.EventHandler(this.button_Minimize_Click);
             // 
             // button_Close
             // 
-            this.button_Close.BackColor = System.Drawing.Color.Transparent;
+            this.button_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
             this.button_Close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_Close.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button_Close.Location = new System.Drawing.Point(380, 0);
+            this.button_Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Close.ForeColor = System.Drawing.Color.White;
+            this.button_Close.Location = new System.Drawing.Point(380, 2);
             this.button_Close.Name = "button_Close";
             this.button_Close.Size = new System.Drawing.Size(36, 30);
             this.button_Close.TabIndex = 4;
+            this.button_Close.Text = "X";
             this.button_Close.UseVisualStyleBackColor = false;
             this.button_Close.Click += new System.EventHandler(this.button_Close_Click);
             // 
@@ -354,17 +358,6 @@
             this.label9.Size = new System.Drawing.Size(282, 31);
             this.label9.TabIndex = 15;
             this.label9.Text = "Create New Account";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Cursor = System.Windows.Forms.Cursors.No;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(335, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(36, 30);
-            this.button1.TabIndex = 5;
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // timer1
             // 
@@ -423,7 +416,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
     }
