@@ -251,6 +251,7 @@
             this.pictureBoxContactImage.Location = new System.Drawing.Point(136, 329);
             this.pictureBoxContactImage.Name = "pictureBoxContactImage";
             this.pictureBoxContactImage.Size = new System.Drawing.Size(120, 120);
+            this.pictureBoxContactImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxContactImage.TabIndex = 3;
             this.pictureBoxContactImage.TabStop = false;
             // 
