@@ -16,7 +16,18 @@ namespace Account_Manager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login_Register_Form());
+            //Application.Run(new Login_Register_Form());
+
+            // display the main form if the login from dialogresult = OK
+            Login_Register_Form fLogin = new Login_Register_Form();
+            if(fLogin.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new MainForm());
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
     }
 }

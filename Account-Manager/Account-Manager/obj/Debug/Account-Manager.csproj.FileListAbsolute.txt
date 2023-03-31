@@ -11,3 +11,6 @@ D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account-Man
 D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account-Manager.pdb
 D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\bin\Debug\MySql.Data.dll
 D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account-Manager.csproj.CopyComplete
+D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account_Manager.MainForm.resources
+D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account_Manager.Edit_User_Data_Form.resources
+D:\GIthub\C-Sharp-Projects\Account-Manager\Account-Manager\obj\Debug\Account_Manager.Add_Contact_Form.resources

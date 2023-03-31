@@ -25,7 +25,7 @@ namespace Account_Manager
             /*panel2.BackgroundImage = Image.FromFile("../../images/1.png");*/
         }
 
-        // login button
+        // button login  
         private void button_Login_Click(object sender, EventArgs e)
         {
             My_DB db = new My_DB();
@@ -38,9 +38,35 @@ namespace Account_Manager
 
             command.Parameters.Add("@un",MySqlDbType.VarChar).Value = textBoxUsername.Text;
             command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = textBoxPassword.Text;
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            if(veriffields("login")) // check for empty fields
+            {
+                if(table.Rows.Count > 0) // check if this user exists
+                {
+                    // display username and image in the main form
+                    // global id
+                    int userid = Convert.ToInt32(table.Rows[0][0].ToString());
+                    Globals.setGlobalUserId(userid);
+
+                    // show the main form
+                    this.DialogResult = DialogResult.OK;
+                }
+                else
+                {
+                    // show an error message
+                    MessageBox.Show("Invalid Username or Password", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Empty Username or Password", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        // register button
+        // button register  
         private void button_Register_Click(object sender, EventArgs e)
         {
             string fname = textBoxFName.Text;
@@ -58,7 +84,7 @@ namespace Account_Manager
                 // we need to check if the username already exists
                 // insert the new user in the database 
                 // we will create that in class USER
-                if(!user.usernameExists(username))
+                if(!user.usernameExists(username,"register"))
                 {
                     if(user.insertUser(fname,lname,username,password,pic))
                     {
@@ -113,7 +139,7 @@ namespace Account_Manager
             return check;
         }
 
-        // browse button
+        // button browse  
         private void button_Browse_Click(object sender, EventArgs e)
         {
             // seclect and display image in the picturebox
@@ -142,13 +168,13 @@ namespace Account_Manager
             labelGoToLogin.Enabled = false;
         }
 
-        // close button
+        // button close  
         private void button_Close_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        // minimize button
+        // button minimize  
         private void button_Minimize_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
